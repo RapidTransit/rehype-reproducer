@@ -1,0 +1,22 @@
+{
+  "name": "rehype-reproducer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx ./index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/pug": "^2.0.10",
+    "pug": "^3.0.3",
+    "rehype": "^13.0.1",
+    "rehype-format": "^5.0.0",
+    "rehype-parse": "^9.0.0",
+    "rehype-stringify": "^10.0.0",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4",
+    "unified": "^11.0.5"
+  }
+}

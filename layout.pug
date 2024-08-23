@@ -1,0 +1,26 @@
+doctype html
+html(lang="##THEMESETTING[HTML lang tag,value]##" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml")
+    head
+        ac:templateoverridearea#Mapper
+        each script in js
+            script(defer type="module" src=`##FILEPATHVERSIONED[##THEMEDIR##js/${script}.js]##`)
+        block head
+        | $$HEADTAGS$$
+        ac:templateoverridearea#ScriptsAddonArea
+        ac:templateoverridearea#HeadTagsAddonArea
+        each stlyeSheet in css
+            link(rel="stylesheet" href=`##FILEPATHVERSIONED[##THEMEDIR##css/${stlyeSheet}.css]##`)
+    body(class=hasBodyClass && "##PAGEBODYCLASSES##", itemtype=hasScope && "http://schema.org/WebPage", itemscope="")
+        block body
+            block header
+                .u-expand
+                    header
+                        | $$HEADER$$
+                        ac:templateoverridearea#HeaderAddonArea
+                    block content
+                        main.o-container.o-container__main
+                            | $$PAGELAYOUT$$
+        block footer
+            footer
+                ac:templateoverridearea#FooterAddonArea
+                | $$FOOTER$$

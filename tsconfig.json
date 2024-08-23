@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    "target": "es2022",
+    "allowJs": true,
+    "baseUrl": ".",
+    "sourceRoot": "./",
+    "esModuleInterop": true,
+    "sourceMap": true
+  }
+}
